@@ -137,7 +137,7 @@ async def test_manus_enables_cli_mcp_by_default(monkeypatch):
             ("uvx", "browser_use"),
             {
                 "use_stdio": True,
-                "stdio_args": ["browser-use", "--cli-mcp"],
+                "stdio_args": ["browser-use==1.0.4", "--cli-mcp"],
                 "tool_name_prefix": False,
                 "stdio_env": {
                     "BROWSER_USE_API_KEY": "bu_test",

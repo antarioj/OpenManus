@@ -88,7 +88,7 @@ uv pip install -r requirements.txt
 OpenManus starts Browser Use CLI 3.0 as a default MCP server:
 
 ```bash
-uvx browser-use --cli-mcp
+uvx browser-use==1.0.4 --cli-mcp
 ```
 
 `uvx` keeps Browser Use and its fast-moving dependencies isolated from the
@@ -99,8 +99,8 @@ Local mode attaches to Chrome or Chromium automatically and needs no API key.
 For diagnostics or to install Chromium, run:
 
 ```bash
-uvx browser-use --doctor
-uvx browser-use install
+uvx browser-use==1.0.4 --doctor
+uvx browser-use==1.0.4 install
 ```
 
 For an isolated Browser Use Cloud browser, authenticate before starting

@@ -17,7 +17,8 @@ from app.tool.str_replace_editor import StrReplaceEditor
 
 _BROWSER_USE_SERVER_ID = "browser_use"
 _BROWSER_USE_COMMAND = "uvx"
-_BROWSER_USE_ARGS = ["browser-use", "--cli-mcp"]
+# Pinned: uvx would otherwise fetch the latest browser-use from PyPI on every start.
+_BROWSER_USE_ARGS = ["browser-use==1.0.4", "--cli-mcp"]
 _BROWSER_USE_ENV_VARS = (
     "BROWSER_USE_API_KEY",
     "BROWSER_USE_CLOUD_API_URL",

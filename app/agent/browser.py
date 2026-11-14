@@ -1,6 +1,7 @@
 import json
 from typing import TYPE_CHECKING, Optional
 
+from app.agent.manus import _BROWSER_USE_ARGS
 from app.agent.mcp import MCPAgent
 from app.logger import logger
 from app.prompt.browser import NEXT_STEP_PROMPT
@@ -96,7 +97,7 @@ when the task is complete.
         await super().initialize(
             connection_type="stdio",
             command="uvx",
-            args=["browser-use", "--cli-mcp"],
+            args=_BROWSER_USE_ARGS,
             server_id="browser_use",
             tool_name_prefix=False,
         )
